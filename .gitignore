@@ -1,0 +1,40 @@
+# Fichiers personnels et temporaires
+*.log
+*.lock
+*.env
+venv/
+__pycache__/
+*.pyc
+history*/
+old/
+
+# Sauvegardes et archives
+*.zip
+*.tgz
+*.tar.gz
+*.bak
+
+# Exclusion des modèles IA lourds
+*.pt
+*.onnx
+
+# Clés et jetons
+.groq_config
+.msal_token_cache.json
+.secrets.env
+
+# Données personnelles de l'agent : tout .myagent est ignoré
+# (mémoire, historique, conversations archivées, fichiers de travail, skills, config)
+.myagent/*
+history.json
+history.json.lock
+
+# Sous-projets versionnés séparément
+Recherche_immo/
+Scan_emails/
+Timekeeping/
+# Données de l'application Shiny et fichiers R
+data/
+.RData
+.Rhistory
+.Rproj.user/
